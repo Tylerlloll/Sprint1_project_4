@@ -1,0 +1,130 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <Title>Alan Turing</Title>
+    
+    <nav>
+      <ul class="nav">
+        <li><a href="#earlyLife">Early Life And Career</a></li>
+        <li><a href="#artificalIntelligence">Artifical Intelligence</a></li>
+        <li><a href="#awards">Awards and Recognition</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      
+    </nav>
+    <style>
+      aside {
+        width: 30%;
+        padding-left: 15px;
+        margin-left: 15px;
+        float: right;
+        font-style: italic;
+        background-color: lightblue
+      }
+      img {
+        width: 200px;
+        height: auto
+      }
+    ul.nav {
+    margin:0;
+    padding:0;
+    list-style:none;
+    height:36px; line-height:36px;
+    background:rgb(2, 87, 115); /* you can change the backgorund color here. */
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+}
+ul.nav li {
+    border-right:1px solid rgb(2, 87, 115)#189b80; /* you can change the border color matching to your background color */
+    float:left;
+}
+ul.nav a {
+    display:block;
+    padding:0 28px;
+    color:#ccece6;
+    text-decoration:none;
+}
+ul.nav a:hover,
+ul.nav li.current a {
+    background:#086754;
+}
+
+    </style>
+  </head>
+  <body>
+    <h1>Alan Turing Bio</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Alan_Turing_%281912-1954%29_in_1936_at_Princeton_University.jpg" <br />
+
+    <p>Alan Turing (June 23, 1912 - June 7th, 1954) was an English mathematician, computre scientist, logician, cryptanalyst, philosopher and theoretical biologist. Turing was highly infuluential in the develpoment of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer. He is widly considered to be the father of theoretical computer science and artifical intelligence.</p>
+   <section>
+    <h2 id="earlyLife">Early life and career</h2>
+    <p>The son of a civil servant, Turing was educated at a top private school. He entered the University of Cambridge to study mathematics in 1931. After graduating in 1934, he was elected to a fellowship at King’s College (his college since 1931) in recognition of his research in probability theory. In 1936 Turing’s seminal paper “On Computable Numbers, with an Application to the Entscheidungsproblem [Decision Problem]” was recommended for publication by the American mathematical logician Alonzo Church, who had himself just published a paper that reached the same conclusion as Turing’s, although by a different method. Turing’s method (but not so much Church’s) had profound significance for the emerging science of computing. Later that year Turing moved to Princeton University to study for a Ph.D. in mathematical logic under Church’s direction (completed in 1938).</p>
+   </section>
+    <section>
+    <h2 id="artificalIntelligence">Artifical Intelligence</h2>
+    <p>Turing was a founding father of artificial intelligence and of modern cognitive science, and he was a leading early exponent of the hypothesis that the human brain is in large part a digital computing machine. He theorized that the cortex at birth is an “unorganised machine” that through “training” becomes organized “into a universal machine or something like it.” Turing proposed what subsequently became known as the Turing test as a criterion for whether an artificial computer is thinking (1950). In late 2022, the advent of ChatGPT reignited conversation about the likelihood that the components of the Turing test had been met.</p>
+    </section>
+
+    <section>
+      <h2 id="awards">Awards and Recognition</h2>
+      <p>Turing was elected a fellow of the Royal Society of London in March 1951, a high honour, yet his life was about to become very hard. In March 1952 he was convicted of “gross indecency”—that is to say, homosexuality, a crime in Britain at that time—and he was sentenced to 12 months of hormone “therapy.” Now with a criminal record, he would never again be able to work for Government Communications Headquarters (GCHQ), the British government’s postwar code-breaking centre.
+
+        Turing spent the remainder of his short career at Manchester, where he was appointed to a specially created readership in the theory of computing in May 1953. From 1951 Turing had been working on what is now known as artificial life. He published “The Chemical Basis of Morphogenesis” in 1952, describing aspects of his research on the development of form and pattern in living organisms. Turing used Manchester’s Ferranti Mark I computer to model his hypothesized chemical mechanism for the generation of anatomical structure in animals and plants.
+        
+        In the midst of this groundbreaking work, Turing was discovered dead in his bed, poisoned by cyanide. The official verdict was suicide, but no motive was established at the 1954 inquest. His death is often attributed to the hormone “treatment” he received at the hands of the authorities following his trial for being gay. Yet he died more than a year after the hormone doses had ended, and, in any case, the resilient Turing had borne that cruel treatment with what his close friend Peter Hilton called “amused fortitude.” Also, to judge by the records of the inquest, no evidence at all was presented to indicate that Turing intended to take his own life, nor that the balance of his mind was disturbed (as the coroner claimed). In fact, his mental state appears to have been unremarkable at the time. Although suicide cannot be ruled out, it is also possible that his death was simply an accident, the result of his inhaling cyanide fumes from an experiment in the tiny laboratory adjoining his bedroom. Nor can murder by the secret services be entirely ruled out, given that Turing knew so much about cryptanalysis at a time when homosexuals were regarded as threats to national security.
+        
+        By the early 21st century Turing’s prosecution for being gay had become infamous. In 2009 British Prime Minister Gordon Brown, speaking on behalf of the British government, publicly apologized for Turing’s “utterly unfair” treatment. Four years later Queen Elizabeth II granted Turing a royal pardon.</p>
+    </section>
+
+    <aside>
+    <h4>Turing Machine</h4>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Turing_Machine_Model_Davey_2012.jpg"
+    <p>A Turing machine is a mathematical model of computation describing an abstract machine that manipulates symbols on a strip of tape according to a table of rules. Despite the model's simplicity, it is capable of implementing any computer algorithm.</p>  
+    </aside>
+    <script></script>
+
+
+  </body>
+  <footer>
+    <h1 id="contact">Contact Us</h1>
+    <form>
+      <label for="name">First and Last name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Jane Doe"><br>
+      <label for="email">Email Address:</label><br>
+      <input type="text" id="email" email="email" placeholder="email@address.com">
+      <input type="Submit" value="Submit">
+    </form>
+  </footer>
+</html>
